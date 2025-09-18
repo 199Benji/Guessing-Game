@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    background-color: #000000;
+}
+main{
+    width: 90%;
+    max-width: 700px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 100px auto 0;
+    padding: 10px;
+    border-top: none;
+
+}
+main h2{
+    text-align: center;
+    font-family: poppins;
+    color: green;
+    font-size: 30px;
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff ;
+
+}
+.head .items{
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.head #Retry:hover{
+    background-color:rgb(153, 176, 153) ;
+}
+.head > .items:nth-child(1) > img{
+    width: 20px;
+}
+.head > .items:nth-child(2) > img{
+    width: 22px;
+}
+.head > .items:nth-child(3) > img{
+    width: 25px;
+}
+
+.items p{
+    font-family: poppins;
+}
+/*  */
+section{
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+
+}
+section h4{
+    font-family:Orbitron ;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+section input{
+    width: 50%;
+    max-width: 90%;
+    padding: 10px;
+    font-family: poppins;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    outline-color: green;
+
+}
+section button{
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: green;
+    padding: 8px 35px;
+    border-radius: 10px;
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    transition: all .3s;
+    opacity: .6;
+    cursor: pointer;
+
+}
+button:hover{
+    opacity: 1;
+
+
+}
+section p {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: -8px;
+    margin-bottom: 30px
+}
+main .span{
+    color: green;
+}
+
+.scoreFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.scoreFlex h5{
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-family: Orbitron;
+}
+.Result{
+    font-family: Orbitron;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.box{
+    font-family: Orbitron;
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+/* media  */
+@media(max-width:600px){
+    .Result{
+    font-size: 20px;
+    margin-top: 18px;
+
+    }
+    .box{
+    width: 50px;
+    }
+    section button{
+        width: 220px;
+        margin-bottom: 10px;
+    }
+    section input{
+        margin-bottom: 10px;
+    }
+}

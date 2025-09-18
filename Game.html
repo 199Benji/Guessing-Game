@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Game</title>
+</head>
+<body>
+    <main>
+        <h2></h2>
+         <div class="head">
+           <div class="items" id="Retry">
+            <img src="Images/rotate-ccw.svg" alt="" class="Retry">
+            <p>Retry</p>
+           </div>  
+            <div class="items Score">
+            <img src="Images/score.png" alt="">
+            <p>HighScore: <span class="span High">0</span></p>
+           </div>  
+        </div>
+        <!-- Content -->
+        <section>
+            <div class="items Score">
+            <img src="Images/speedometer.png" alt="">
+            <div class="scoreFlex">
+                <p>Score:</p> 
+                <h5 class="span figure">10</h5>
+            </div>
+           </div>              
+            <h4>Guess a Number Between 1 and 10</h4>
+            <input type="text" placeholder="Guess a number.." class="Input">
+            <button id="check">check</button>
+            <div class="flex">
+            <h1 class="box">?</h1>
+            <p class="Result">Start Guessing..</p>
+            </div>
+
+        </section>
+    </main>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
